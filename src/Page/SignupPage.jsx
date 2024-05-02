@@ -103,17 +103,16 @@ export default function Signup(){
                             <div>비밀번호가 다릅니다..</div>
                         )}
                     </div>
-                    {/* <div >
+                    <div >
                     <div className="inputTitle">
                             사용자 유형을 선택해주세요
                         </div>
                     <select value={selectValue} onChange={handleSelectChange} className="selectWrap">
                         <option value="1">선택해주세요</option>
                         <option value="2">일반</option>
-                        <option value="3">영양사</option>
-                        <option value="4">도매상</option>
+                        <option value="3">도매상</option>
                         </select>
-                    </div> */}
+                    </div>
 
                 </div>
                 <button   className="SbottomButton">

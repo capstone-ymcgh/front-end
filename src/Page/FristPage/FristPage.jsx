@@ -1,5 +1,4 @@
 import React from 'react';
-import TopMenu from './topmenu';
 import './FristPage.css';
 
 const Navigation = () => {
@@ -13,9 +12,11 @@ const Navigation = () => {
             </nav>  
             <div className="main">
                 <div className="container">
-                    <h1>시작 화면</h1>
-                    <p>메인 화면 입니다.</p>
-                    <a to="/login" className="sign">가입하기</a>
+                    <div>식단관리 및 도매소매값을 알려줍니다.</div>
+                    <div>사용해보시겠습니까?</div>
+                    <div>
+                        <button to="/login" className="sign">가입하기</button>
+                    </div>
                 </div>
             </div>
         </div>

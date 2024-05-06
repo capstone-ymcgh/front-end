@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import TopMenu from './topmenu';
+import TopMenu from '../topmenu/topmenu';
 
 function MainPage() {
     const [posts, setPosts] = useState([]);

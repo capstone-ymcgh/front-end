@@ -1,17 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import MainPage from './Page/MainPage';
-import CalendarPage from './Page/CalendarPage';
+import MainPage from './Page/MainPage/MainPage';
+import CalendarPage from './Page/CalendarPage/CalendarPage';
 import Board from './Page/Board';
-import LoginPage from './Page/LoginPage';
-import FristPage from './Page/FristPage';
+import LoginPage from './Page/LoginPage/LoginPage';
+import FristPage from './Page/FristPage/FristPage';
+import Signup from './Page/LoginPage/SignupPage';
+import RecipePage from './Page/recipePage/recipePage';
 // import Newpage from './Page/NewPage';
-import SignupPage from './Page/SignupPage';
+
+import SignupPage from './Page/LoginPage/SignupPage';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <SignupPage />
+    <RecipePage/>
   </React.StrictMode>
 );
 

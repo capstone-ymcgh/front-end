@@ -1,0 +1,59 @@
+.imgbox{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* 수정된 속성 */
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    background-color: red;
+    width: 1000px;
+    height: 820px;
+}
+.imgbox2{
+    height: 550px;
+    
+}
+.imginput{
+    margin-top: 20px;
+    display: flex;
+    width: 800px;
+    height: 500px;
+    background-color: yellow;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    margin-top: 10px;
+    height: 500px;
+    object-fit: contain; /* 수정된 속성 */
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.removeButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    color: white; /* 버튼의 텍스트 색상을 흰색으로 변경합니다. */
+    position: absolute;
+    left: 45%;
+    width: 150px; /* 버튼의 너비를 150px로 설정합니다. */
+    height: 50px;
+    border-radius: 50px;
+}
+.textbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 63px;
+    margin-bottom: 20px;
+    background-color: blue;
+    width: 800px;
+    height: 200px;
+    font-size: 15px;
+}

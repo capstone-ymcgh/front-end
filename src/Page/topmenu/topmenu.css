@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .topMenu{
     display: flex;
     height: 50px;
@@ -28,5 +34,15 @@
 } */
 .login:hover{
     border-color:white;background-color:white; color:#ffcc6d; 
-
+}
+.tpMenu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color:white;
+    font-size: 20px;
+}
+.tpMenu :active{
+    padding: 2px;
+    border-bottom: 2px solid white;
 }

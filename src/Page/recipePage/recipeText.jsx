@@ -27,9 +27,14 @@ function RecipeText({ index, text: initialText, image: initialImage, onTextChang
 
     return (
         <div className='imgbox'>
-            <div className='recipetextindex'>{index + 1}</div>
+            <div className='recipetextindex'>{index + 1} page</div>
             <div className='imgbox2'>
-                {!image && <input className='imginput' type="file" accept="image/*" onChange={handleImageUpload} />}
+                {!image && (
+                <>
+                    <input className='imginput' type="file" accept="image/*" onChange={handleImageUpload} />
+                    {/* <p className="preview_msg">클릭 혹은 파일을 이곳에 드롭하세요.</p> */}
+                </>
+                )}
                 {image && (
                     <div className='image'>
                         <img src={image} alt="Preview" style={{ width: dynamicWidth, height: dynamicHeight }} />
@@ -43,3 +48,14 @@ function RecipeText({ index, text: initialText, image: initialImage, onTextChang
 }
 
 export default RecipeText;
+
+
+
+
+
+
+
+
+
+
+

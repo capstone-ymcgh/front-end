@@ -37,16 +37,19 @@ function RecipePage() {
     return (
         <div>
             <TopMenu />
+            <button className="left-button"onClick={beforeRecipeText}>
+            <img src='/free-icon-font-angle-left-3916934.png' alt="button image" />
+            </button>   
             {activeIndex >= recipeTexts.length - 1 ?  (
-            <button className="add" onClick={addRecipeText}>
-            <img src='/free-icon-font-add-3914337.png' alt="button image" />
+            <button className="add-button" onClick={addRecipeText}>
+            <img src='/free-icon-add-6998878.png' alt="button image" />
             </button>
             ) : (
-            <button className="right"onClick={afterRecipeText}>
+            <button className="right-button"onClick={afterRecipeText}>
             <img src='/free-icon-font-angle-right-3916924.png' alt="button image" />
             </button>
             )}
-            <button className="left"onClick={beforeRecipeText}><img src='/free-icon-font-angle-left-3916934.png' alt="button image" /></button>
+                    
             <RecipeText
                 key={recipeTexts[activeIndex].key}
                 index={activeIndex}

@@ -1,0 +1,130 @@
+.recipe-text{
+    font-size: 50px;
+    font-weight: bold;
+
+    text-align: center;
+}
+.grid-container {
+    border: 1px solid #ddd; /* 태두리 색상 설정 */
+    padding: 20px; /* 내부 패딩 설정 */
+    margin: 20px; /* 외부 마진 설정 */
+}
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: auto;
+    grid-auto-flow: row;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.recipe-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    width: 200px; /* 카드의 너비 설정 */
+    height: 300px; /* 카드의 높이 설정 */
+    overflow: hidden; /* 내용이 카드의 크기를 초과하면 숨김 */
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe-img {
+    margin: -10px 0 0 -10px;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    display: flex;
+}
+
+
+.recipe-item h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.recipe-item p {
+    margin: 0;
+    color: #666;
+}
+
+.recipe-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.button-Catagory {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.button-Catagory:hover {
+    background-color: #bbb;
+}
+
+input[type="text"] {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.recipe-search{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.recipe-Category{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.recipe-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: fixed; /* 요소를 고정 위치에 배치 */
+    right: 0; /* 오른쪽에 배치 */
+    top: 50%; /* 상단에서 50% 위치에 배치 */
+    transform: translateY(-50%); /* Y축으로 -50% 이동하여 정확히 중앙에 배치 */
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+    cursor: pointer;
+}
+.recipe-add:hover {
+    background-color: #bbb;
+}
+.recipe-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 500px;
+    height: 80px;
+
+}
+.left{
+    display: flex;
+    position: static;
+    width: 20px;
+    height: 20px;
+}
+.pageNumber{
+    margin: 0 10px; /* Adjust as needed */
+}

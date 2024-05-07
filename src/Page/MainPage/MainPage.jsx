@@ -1,31 +1,31 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import TopMenu from '../topmenu/topmenu';
-
+import Slide from './Slide';
+import './MainPage.css';
+import MennuSlide from './menuSlide';
 function MainPage() {
-    const [posts, setPosts] = useState([]);
-
-    const addPost = () => {
-        if (posts.length < 10) {
-            const newPost = `게시글 ${posts.length + 1}`;
-            setPosts([...posts, newPost]);
-        }
-    };
 
     return (
         <div>
             <TopMenu />
-            <div className="main">
-                <div className="container">
-                    <div className='containerTop'>  
-                        <div className='text'>나만의 식단목록</div>
-                        <a className="NewPage"onClick={addPost}>+ 새로 만들기</a>
+            <Slide/>
+            <div>
+                <div>추천레시피</div>
+                <div>추천하는 레시피로 최고의 순간을 만들어보세요</div>
+                <div className='Recipe-recommendation'>
+                    <div className='r1'>
+                        <img className="r1-img"src="header_img.png" alt="img1" />
+                        <div className='r1-text'>제목</div>
                     </div>
-                    <div>    
-                    {posts.map((post, index) => (
-                            <a className="menu" key={index}>{post}</a>
-                        ))}
+                    <div className='r2'>
+                        <img className="r1-img"src="header_img.png" alt="img1" />
+                        <div className='r1-text'>제목</div>
                     </div>
                 </div>
+            </div>
+            <div>
+                <div>인기 레시피</div>
+            <MennuSlide/>
             </div>
         </div>
     );

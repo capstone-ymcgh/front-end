@@ -8,14 +8,13 @@ import LoginPage from './Page/LoginPage/LoginPage';
 import FristPage from './Page/FristPage/FristPage';
 import Signup from './Page/LoginPage/SignupPage';
 import RecipePage from './Page/recipePage/recipePage';
-// import Newpage from './Page/NewPage';
 import RecipeBlog from './Page/recipeblog/recipeblog';
 import SignupPage from './Page/LoginPage/SignupPage';
 import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RecipePage/>
+    <App/>
   </React.StrictMode>
 );
 

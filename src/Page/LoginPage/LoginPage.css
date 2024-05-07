@@ -1,29 +1,58 @@
 a {
     cursor: pointer;
 }
-.page {
+/* .page-c{
+    width: 800px;
+    background-color: #fffaed;
+    top: 0;
+    bottom: 0;
+    left: 0; 
+    right: 0; 
+    overflow: hidden;
+    display: flex;
+
+    margin: auto; 
+    height: 1000px;
+} */
+
+.page-S{
     position: absolute;
 	top: 0;
 	bottom: 0;
+    height: 800px;
 	width: 100%;
 	max-width: 500px;
-    padding: 0 20px;
-
+    padding:50px 20px;
 	left: 50%;
 	transform: translate(-50%, 0);
-
-    background-color: #F7F7F7;
-
 	overflow: hidden;
     display: flex;
     flex-direction: column;
+    background-color: #fffaed;
+}
+.page-L{
+    position: absolute;
+	top: 0;
+	bottom: 0;
+    height: auto;
+	width: 100%;
+	max-width: 500px;
+    padding: 0 20px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #fffaed;
 }
 
+
 .titleWrap {
-    margin-top: 87px;
+    margin-top: 110px;
     font-size: 26px;
 	font-weight: bold;
 	color: #262626;
+
 }
 
 .contentWrap {
@@ -31,9 +60,11 @@ a {
 }
 
 .inputTitle {
-    font-size: 12px;
+    font-size: 20px;
 	font-weight: 600;
 	color: #262626;
+    display: flex;
+    left: 0;
 }
 .selectWrap{
     display: flex;
@@ -45,7 +76,7 @@ a {
     border: 1px solid #e2e0e0;
 }
 .selectWrap:focus-within {
-    border: 1px solid #9e30f8;
+    border: 1px solid #ffca2a;
 }
 .inputWrap {
     display: flex;
@@ -54,19 +85,25 @@ a {
     margin-top: 8px;
     background-color: white;
     border: 1px solid #e2e0e0;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
 }
 .inputWrap:focus-within {
-    border: 1px solid #9e30f8;
+    border: 1px solid #ffca2a;
 }
 
-.input {
+.input_text {
     width: 100%;
     outline: none;
-	border: none;
-    height: 17px;
+    border: none;
+    height: 15px;
     font-size: 14px;
 	font-weight: 400;
+    padding: 0;
 }
+
 
 .input::placeholder {
     color: #dadada;
@@ -78,18 +115,18 @@ a {
     border: none;
     font-weight: bold;
     border-radius: 64px;
-    background-color: #9e30f4;
+    background-color: #ffca2a;
     color: white;
     margin-top: 20px;
     cursor: pointer;
 }
 
 .bottomButton:disabled {
-    background-color: #dadada;
+    background-color: #ffca2a;
     color: white;
 }
 .bottomButton:hover {
-    background-color: #9e30f8;
+    background-color: #ffca2a;
 }
 .Atag{
     margin-top: 40px;
@@ -102,7 +139,7 @@ a {
     border: none;
 }
 .Atag>a:hover {
-    color: #9e30f8;
+    color: #ffca2a;
 }
 
 .SbottomButton {
@@ -117,12 +154,20 @@ a {
     cursor: pointer;
 }
 .SbottomButton:hover {
-    background-color: #9e30f8;
+    background-color: #ffca2a;
 }
 
 .errorMessageWrap {
     margin-top: 8px;
     color: #ef0000;
     font-size: 12px;
+}
+.logo-a{
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 10px;
 }
 

@@ -12,6 +12,10 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+@font-face {
+  font-family: 'MyFont';
+  src: url('../public/Cafe24Ohsquare-v2.0.ttf'); /* adjust as needed */
+}
 
 .App-header {
   background-color: #282c34;

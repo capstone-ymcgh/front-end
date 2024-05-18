@@ -1,19 +1,35 @@
 import React, { useEffect, useState } from 'react'
 import './LoginPage.css';
-const User = {
-  email: 'test@example.com',
-  pw: 'test2323@@@'
-}
+import { useNavigate } from 'react-router-dom';
+
 
 
 export default function Login() {
+
+    
     const [email, setEmail] = useState('');
     const [pw, setPw] = useState('');
+    const User = {
+      email: '1234@naver.com',
+      pw: 'qkr123@@'
+    }
 
     const [emailValid, setEmailValid] = useState(false);
     const [pwValid, setPwValid] = useState(false);
     const [notAllow, setNotAllow] = useState(true);
 
+    const navigate = useNavigate();
+
+    const handleAddsignup = () => {
+    navigate('/signup');
+    };  
+    const handleAddFindPW = () => {
+      navigate('/findpw');
+      };  
+
+    const handleAddFindId = () => {
+      navigate('/findid');
+      };  
     useEffect(() => {
       if(emailValid && pwValid) {
         setNotAllow(false);
@@ -45,13 +61,16 @@ export default function Login() {
     const onClickConfirmButton = () => {
       if(email === User.email && pw === User.pw) {
         alert('로그인에 성공했습니다.')
+        navigate('/main');
       } else {
         alert("등록되지 않은 회원입니다.");
       }
     }
 
     return (
-      <div className="page">
+      <div className='page-c'>
+      <div className="page-L">
+                <img src="logo.png" alt="logo" className="logo-a" />
         <div className="titleWrap">
           이메일과 비밀번호를
           <br />
@@ -61,26 +80,26 @@ export default function Login() {
         <div className="contentWrap">
           <div className="inputTitle">이메일</div>
           <div className="inputWrap">
-            <input
-              className="input"
-              type="text"
+          <input
+              className="input_text"
+              type="email"
               placeholder="이메일"
               value={email}
               onChange={handleEmail}
             />
           </div>
-          <div className="errorMessageWrap">
+          {/* <div className="errorMessageWrap">
             {!emailValid && email.length > 0 && (
               <div>올바른 이메일을 입력해주세요.</div>
             )}
-          </div>
+          </div> */}
 
           <div style={{ marginTop: "26px" }} className="inputTitle">
             비밀번호
           </div>
           <div className="inputWrap">
             <input
-              className="input"
+              className="input_text"
               type="password"
               placeholder="비밀번호"
               value={pw}
@@ -100,10 +119,11 @@ export default function Login() {
           </button>
         </div>
         <div className="Atag">
-            <a href="/signup">회원가입</a>
-            <a href="/signup">아이디 찾기</a>
-            <a href="/signup">비밀번호 찾기</a>
+            <a onClick={handleAddsignup}>회원가입</a>
+            <a onClick={handleAddFindId}>아이디 찾기</a>
+            <a onClick={handleAddFindPW}>비밀번호 찾기</a>
         </div>
+      </div>
       </div>
     );
 }

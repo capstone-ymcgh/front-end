@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: flex-start; /* 수정된 속성 */
     align-items: center;
-    margin-top: 60px;
+    margin-top: 30px;
     margin-bottom: 20px;
     /* background-color: red; */
     width: 1000px;

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './recipeblog.css';
 import TopMenu from '../topmenu/topmenu';
@@ -18,7 +18,11 @@ const RecipeBlog = () => {
         description: '설명',
         imageUrl: '/header_img.png'
     }));
-
+    useEffect(() => {
+        // 여기에서 판매 데이터를 가져오는 코드를 추가합니다.
+        // 예를 들어, API 호출을 사용할 수 있습니다.
+        // 가져온 데이터를 setSales를 사용하여 상태를 설정합니다.
+      }, []);
     const [searchTerm, setSearchTerm] = useState(''); // 검색어 상태
 
     const handleSearchChange = (event) => {
@@ -47,18 +51,6 @@ const RecipeBlog = () => {
     };
 
     const [startPageState, setStartPage] = useState(1); // 시작 페이지 상태
-
-    const handleNextSet = () => {
-        if (startPageState + 10 <= totalPages) {
-            setStartPage(startPageState + 10); // 다음 페이지 세트로 이동
-        }
-    };
-    
-    const handlePreviousSet = () => {
-        if (startPageState - 10 >= 1) {
-            setStartPage(startPageState - 10); // 이전 페이지 세트로 이동
-        }
-    };
     
     const startPage = Math.floor((currentPage - 1) / 10) * 10 + 1; // 시작 페이지 계산
     const endPage = Math.min(startPage + 9, totalPages); // 끝 페이지 계산

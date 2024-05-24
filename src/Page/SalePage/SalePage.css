@@ -1,0 +1,158 @@
+.Sale-search-box {
+  display: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 150px; /* TopMenu 아래에 100px 떨어지도록 수정 */
+}
+
+.Sale-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-left: 400px;
+
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 100%; /* Ensuring it takes full width of the parent */
+  max-width: 600px; /* Limiting maximum width for better design */
+}
+
+.search-text {
+  margin-right: 10px;
+  padding: 5px;
+  flex: 1;
+}
+
+.button-Catagory {
+  padding: 5px 10px;
+}
+
+.Catagor-menu {
+  position: relative;
+}
+
+.Catagor-menu ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  height: 50px;
+  flex-wrap: wrap;
+}
+
+.Catagor-menu li {
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  width: 150px;
+  background-color: #ffcc6d;
+  text-align: center;
+  align-items: center;
+  
+}
+
+.Catagor-menu li:hover {
+  background-color: bisque;
+}
+
+.Catagor-menu li:hover > .subcategory-list {
+  display: block;
+}
+
+.subcategory-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #eeffcf;
+  z-index: 1;
+}
+
+.subcategory-list div {
+  padding: 10px;
+  cursor: pointer;
+  width: 150px;
+}
+
+.subcategory-list div:hover {
+  background-color: #eeffcf;
+}
+.saleitem-box{
+  width: 1300px;
+  height: 900px;
+  background-color: red;
+
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+.salePage-bottom {
+  position: flex;
+
+  align-items: center;
+  justify-content: center;  
+  transform: (50%, 50%);
+  margin-top: -40px;
+}
+.sale-grid-container {
+  border: 1px solid #ddd; /* 태두리 색상 설정 */
+  width: 1300px; /* 그리드 너비 설정 */
+  height: 1600px;
+  background-color: white;
+}
+.sale-grid {
+  width: 1300px; /* 그리드 너비 설정 */
+  height: 1500px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: auto;
+  grid-auto-flow: row;
+  gap: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  z-index: 1 ;
+}
+.sale-item {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  width: 220px; /* 카드의 너비 설정 */
+  height: 270px; /* 카드의 높이 설정 */
+  overflow: hidden; /* 내용이 카드의 크기를 초과하면 숨김 */
+  justify-content: center;
+  align-items: center;
+}
+
+.sale-img-box {
+  position:relative;
+  margin: -10px 0 0 -10px;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+
+}
+
+
+.sale-item h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.sale-item p {
+  margin: 0;
+  color: #666;
+}
+
+.sale-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}

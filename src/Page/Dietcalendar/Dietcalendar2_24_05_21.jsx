@@ -11,9 +11,8 @@ const Dietcalendar = () => {
     const handleAddDiet = () => {
         const newDiet = {
             id: dietcalendarData.length, // 새로운 식단의 id는 현재 식단 데이터의 길이로 설정
-            name: `제목 ${dietcalendarData.length + 1}`, // 새로운 식단의 이름 설정
-            data:'날짜',
-            calorie:'평균 칼로리'
+            name: `2024-05-21식단 ${dietcalendarData.length + 1}`, // 새로운 식단의 이름 설정
+
         };
         setDietcalendarData([...dietcalendarData, newDiet]); // 새로운 식단을 dietcalendarData에 추가
     };
@@ -61,11 +60,10 @@ const handleOpenModel = () => {
     setModelOpen(true);
     const newDiet = {
         id: dietcalendarData.length, // 새로운 식단의 id는 현재 식단 데이터의 길이로 설정
-        name: `제목 ${dietcalendarData.length + 1}`, // 새로운 식단의 이름 설정
-        data:'날짜',
-        calorie:'평균 칼로리'
+        name: `2024-05-21식단 ${dietcalendarData.length + 1}`, // 새로운 식단의 이름 설정
+
     };
-    setDietcalendarData([...dietcalendarData, newDiet]); // 새로운 식단을 dietcalendarData에 추가
+
 };
 
 const handleCloseModal = () => {
@@ -115,6 +113,10 @@ const openCalendar = () => {
                 <div>{diet.calorie}</div>
             </div>
         ))}
+        <div className="dietcalendar-item">
+                <div>2024-05-21식단</div>
+
+            </div>
     </div>
                 <div className='dietcalendar-bottom'>
                 <button className="dietcalendar-button"onClick={handlePrevPage}>&lt;</button>

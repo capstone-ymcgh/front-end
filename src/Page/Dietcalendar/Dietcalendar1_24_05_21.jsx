@@ -11,9 +11,8 @@ const Dietcalendar = () => {
     const handleAddDiet = () => {
         const newDiet = {
             id: dietcalendarData.length, // 새로운 식단의 id는 현재 식단 데이터의 길이로 설정
-            name: `제목 ${dietcalendarData.length + 1}`, // 새로운 식단의 이름 설정
-            data:'날짜',
-            calorie:'평균 칼로리'
+            name: `2024-05-21식단 ${dietcalendarData.length + 1}`, // 새로운 식단의 이름 설정
+
         };
         setDietcalendarData([...dietcalendarData, newDiet]); // 새로운 식단을 dietcalendarData에 추가
     };
@@ -62,10 +61,8 @@ const handleOpenModel = () => {
     const newDiet = {
         id: dietcalendarData.length, // 새로운 식단의 id는 현재 식단 데이터의 길이로 설정
         name: `제목 ${dietcalendarData.length + 1}`, // 새로운 식단의 이름 설정
-        data:'날짜',
-        calorie:'평균 칼로리'
+
     };
-    setDietcalendarData([...dietcalendarData, newDiet]); // 새로운 식단을 dietcalendarData에 추가
 };
 
 const handleCloseModal = () => {
@@ -80,7 +77,7 @@ const handleGoToCalendar = () => {
     const year = selectedDate.getFullYear();
     const month = selectedDate.getMonth() + 1; // getMonth는 0부터 시작하므로 1을 더해줍니다.
     const formattedDate = `${year}/${month}`;
-    navigate('/calendar', { state: { selectedDate: formattedDate } });
+    navigate('/calendar_24_05_21', { state: { selectedDate: formattedDate } });
     setModelOpen(false);
     console.log('calendar', year, month);
 };
@@ -111,8 +108,7 @@ const openCalendar = () => {
         {currentItems.map((diet) => (
             <div key={diet.id} className="dietcalendar-item">
                 <div>{diet.name}</div>
-                <div>{diet.data}</div>
-                <div>{diet.calorie}</div>
+
             </div>
         ))}
     </div>

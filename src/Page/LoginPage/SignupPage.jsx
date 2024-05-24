@@ -53,11 +53,18 @@ const handlerPw = (e) => {
       setrPwValid(false);
     }
 };
+const [showBusinessReg, setShowBusinessReg] = useState(false);
+
 
 // 선택된 값을 처리하는 핸들러 함수
 const handleSelectChange = (e) => {
     setSelectValue(e.target.value);
-}
+    if (e.target.value === '3') {
+        setShowBusinessReg(true);
+    } else {
+        setShowBusinessReg(false);
+    }
+};
     return (
         <div className='page-c'>
         <div className="page-S">
@@ -72,8 +79,18 @@ const handleSelectChange = (e) => {
                     </div>
                     <div className="inputWrap">
                     <input
-                        type="email"
+                        type="text"
                         placeholder="닉네임"
+                        className="input_text"
+                    />
+                    </div>
+                    <div style={{ marginTop: "10px" }} className="inputTitle">
+                            이름을 입력해주세요
+                    </div>
+                    <div className="inputWrap">
+                    <input
+                        type="text"
+                        placeholder="이름"
                         className="input_text"
                     />
                     </div>
@@ -133,6 +150,21 @@ const handleSelectChange = (e) => {
                         <option value="3">도매상</option>
                         </select>
                     </div>
+                    {showBusinessReg && (
+                    <div>
+                        <div className="inputTitle">
+                            사업자 등록번호를 입력해주세요
+                        </div>
+                        <div className="inputWrap">
+                        <input
+                            type="text"
+                            placeholder="사업자 등록번호"
+                            className="input_text"
+                        />
+                        </div>
+                           
+                    </div>
+                    )}
 
                 </div>
                 <button onClick={handleAddlogin}  className="SbottomButton">

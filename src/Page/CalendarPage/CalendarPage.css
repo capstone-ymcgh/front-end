@@ -67,9 +67,15 @@ body {
 .calendar .weeks div {
     font-weight: 500;
     text-decoration: none;
+    padding-top: 50px;
+    padding-left: 60px;
+    font-size: 40px;
+    background-color: #ffe6b8;
+    border: 1px solid #ffca2a;
 }
 .calendar .days {
     margin-bottom: 20px;
+
 }
 .calendar div div {
     /*#8*/
@@ -79,6 +85,7 @@ body {
     text-decoration: none;
     height: 150px;
     transition: transform 0.3s ease-in-out; /* 애니메이션 효과를 부드럽게 만듭니다. */
+
 }
 .non-current-month:hover {
     transform: none;
@@ -104,17 +111,16 @@ body {
     color: #aaa;
     border: 1px solid black;
     background-color: gray;
+    
+    
 }
 .days div.inactive div {
     display: none;
     pointer-events: none;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
-.days div.active {
-    color: #fff;
-    
-    
-}
 .calendar .days div::before {
     position: absolute;
     content: '';
@@ -125,6 +131,7 @@ body {
     transform: translate(-50%, -50%);
     border-radius: 50%;
     z-index: -1;
+    
 }
 .days .current-month:hover {
     transform: scale(1.5);
@@ -138,9 +145,12 @@ body {
 }
 .current-month {
     color: black;
+    border: 1px solid #ffca2a;
+    padding-left:10px ;
+    padding-top: 10px;
 }
 .days div.menu{
-    
+    margin-left: 20px;
     margin-top: 20px;
     padding: 0;
     text-decoration: none;
@@ -183,59 +193,6 @@ body {
     font-size:20px;
 }
 
-/*.MD{
-    display: flex;
-    justify-content: center;
-    align-items: top;
-    height: 100%;
-    font-size: 2em;
-    height: 50px;
-}
-.MenuContainer {
-    
-    padding-top:50px;
-}
-.MenuText{
-    position: relative;
-    width: 400px;
-    left: 50px;
-    font-size: 2em;
-}
-.SearchData{
-    background-color: white;
-    width: 225px;
-    height: 100px;
-}
-.MenuSearch{
-    position: relative; 
-        top: -150px; 
-    float: right;
-    width: 268px;
-    font-size: 1.5em;
-} */
-/* .Button{
-    margin-right: -210px;
-    width: 200px;
-    height: 48px;
-    float: right;
-    text-align: center;
-    height: 48px;
-    border: none;
-    font-weight: bold;
-    border-radius: 64px;
-    background-color: #fbff00;
-    color: white;
-    margin-top: 20px;
-    cursor: pointer;
-}
-.InputText{
-    outline: none;
-	border: none;
-    height: 17px;
-    font-size: 14px;
-	font-weight: 400;
-} */
-/* CSS 코드 */
 .sellectmenu {
     background-color: #f9ff9f;
     border-radius: 10px;
@@ -248,7 +205,7 @@ body {
     left: 50%; 
     transform: translateX(-50%); 
     width: 60vw;
-    height: 400px;
+    height: 550px;
 
 }
 
@@ -272,6 +229,7 @@ body {
 
 .sellectmenu .MenuText {
     font-size: 1em;
+    width: 60%;
 }
 .MD{
     display: flex;
@@ -281,11 +239,11 @@ body {
     height: 80px;
 }
 .sellectmenu .MenuSearch {
-    width: 50%;
+    width: 40%;
 }
 
 .sellectmenu .MenuSearch .InputText {
-    width: 80%;
+    width: 70%;
     height: 40px;
     padding: 5px;
     border-radius: 5px;
@@ -301,7 +259,7 @@ body {
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
-    width: 100px;
+    width: 120px;
     margin-top: 50px;
 }
 .textsearch{
@@ -319,6 +277,9 @@ body {
     background-color: #ffcc6d;
 
 }
+.Button-sss{
+    margin-top: -30px;
+}
 .Button-save{
     width: 250px;
     height: 80px;
@@ -327,14 +288,14 @@ body {
     border-style: none;
     color:white;
     font-size: 20px;
+
 }
 .Left-B{
     width: 80px;
     height: 50px;
-    border-radius: 50px;
-    background-color: #ffca2a;
-    border-style: none;
-    color:white;
+    border: none;
+    background:none;
+    color:#ffca2a;
     font-size: 50px;
     align-items: center;
     justify-content: center;
@@ -342,11 +303,55 @@ body {
 .Right-B{
     width: 80px;
     height: 50px;
-    border-radius: 50px;
-    background-color: #ffca2a;
-    border-style: none;
-    color:white;
+    border: none;
+    background:none;
+    color:#ffca2a;
     font-size: 50px;
     align-items: center;
     justify-content: center;
+}
+.MenuText-b{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    flex-direction: row;
+}
+.MenuText-f{
+    display: flex;
+    width: 30%;
+    justify-content: right;
+    align-items: center;
+    padding-right:20px;
+    background-color: #fff6da;
+    border-top: 1px solid #ffca2a;
+    border-bottom: 1px solid #ffca2a;
+    border-right: 1px solid #ffca2a;
+}
+.MenuText-l{
+    display: flex;
+    width: 70%;
+    justify-content: left;
+    align-items: center;
+    padding-left:20px;
+    border-top: 1px solid #ffca2a;
+    border-bottom: 1px solid #ffca2a;
+    border-left: 1px solid #ffca2a;
+}
+.goButton {
+    /* 버튼 스타일 */
+    display: inline-block;
+    margin-left: 150px;
+    padding: 5px 10px;
+    background-color: #ffca2a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.SearchData{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: white
+    
 }

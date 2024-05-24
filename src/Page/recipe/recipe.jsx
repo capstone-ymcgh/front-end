@@ -21,9 +21,9 @@ const Recipe = () => {
                     }
                     return null;
                     })}
-                    <div>
+                    <div className='recipet'>
                     <div className='recipe-title'>{recipeTitle}</div>
-                    <div>재료</div>
+                    <div className='recipe-t'>-재료</div>
                     <div className='recipe-ingredients'>{recipeIngredients}</div>
                     </div>
                     <div className='recipe-box'>

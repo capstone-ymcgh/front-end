@@ -1,0 +1,129 @@
+.sale-box{
+    width: 1200px;
+    height: 800px;
+    /* background-color: red; */
+    margin-top: 100px;
+    flex-direction: column;
+}
+.sale-img{
+    width: 550px;
+    height: 690px;
+    background-color: rgb(240, 240, 240);
+    margin-left: 60px;
+    position: absolute;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.sm-img{
+    width:550px;
+    height: 170px;
+
+    display: flex;
+    flex-direction: row;
+    overflow-y: auto;
+}
+
+/* 스크롤바 전체의 너비 */
+.sm-img::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* 스크롤바 배경 */
+.sm-img::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* 스크롤바 핸들 */
+.sm-img::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* 스크롤바 핸들 호버 */
+.sm-img::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.sm-img-index{
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    margin: 10px;
+}
+.customFileUpload {
+    padding: 10px;
+    background-color:#fffaed;
+    color: #ffca2a;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 20px;
+  }
+  .customFileUpload:hover {
+    background-color: #ffca2a;
+    color: white;
+  }
+.sale-img-text{
+    width: 500px;
+    height: 50px;
+    font-size: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.sale-img-index{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    margin-top: 25px;
+}
+.sale-text{
+    width: 550px;
+    height: 700px;
+    background-color: rgb(255, 235, 198);
+    position: absolute;
+    margin-left: 650px;
+    margin-top: 50px;
+    text-align: left;
+    border-radius: 20px;
+}
+.sale-title{
+    margin-top: 50px;
+    width: 500px;
+    height: 50px;
+    font-size: 30px;
+    margin-left: 20px;
+
+}
+.sale-stitle{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.sale-stitle-t{
+    width: 500px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.sale-price{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.sale-button{
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 50px;
+    background-color: #fffaed;
+    border: none;
+    border-radius: 50px;
+    font-weight: 800;
+    color: #ffca2a;
+}
+.sale-button:hover{
+    background-color: #ffca2a;
+    color: white;
+}

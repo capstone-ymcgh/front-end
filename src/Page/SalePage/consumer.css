@@ -1,0 +1,118 @@
+.consumer-text{
+    width: 550px;
+    height: 800px;
+    background-color: rgb(255, 235, 198);
+    position: absolute;
+    margin-left: 650px;
+    margin-top: 50px;
+    text-align: left;
+}  
+.consumer-title{
+    margin-top: 150px;
+    width: 500px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+.consumer-stitle{
+    margin-top: 40px;
+    width: 400px;
+    height: 200px;
+    text-align: left;
+    margin-left: 10px;
+}
+.consumer-price-box{
+    width: 400px;
+    height: 100px;
+    background-color: rgb(255, 204, 52);
+    position: absolute;
+    margin-left: 25px;
+    border-radius: 20px;
+}
+.consumer-price-box-button{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    flex-direction: row;
+}
+.consumer-price-box-title{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.consumer-price-box-button-t{
+    width: 50px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    flex-direction: row;
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+.consumer-price-box-button-b{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    flex-direction: row;
+    background-color: aliceblue;
+    border: 1px solid black;
+    font-weight: 1000;
+}
+.consumer-price-box-button-price{
+    position: absolute;
+    margin-left: 600px;
+    
+}
+.price-sum{
+    margin-top: 40px;
+}
+.price-sum-text{
+    font-size: 20px;
+}
+.price-sum-num{
+    font-size: 20px;
+    margin-left: 450px;
+    margin-bottom: 30px;
+}
+.heart-button.hearted {
+    color: red;
+  }
+.heart-button{
+    width: 60px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 50px;
+    font-weight: 1000;
+}
+.price-sum-button1{
+    width: 160px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 5px;
+}
+.price-sum-button2{
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 5px;
+}
+.consumer-buy{
+    position: absolute;
+    margin-top: 250px;
+}

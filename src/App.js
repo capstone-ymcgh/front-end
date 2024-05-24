@@ -14,13 +14,29 @@ import Recipe from './Page/recipe/recipe';
 import UserInfo from './Page/UserInfo/UserInfo';
 import Dietcalendar from './Page/Dietcalendar/Dietcalendar'; // Dietcalendar import
 import CalendarPage from './Page/CalendarPage/CalendarPage'; // CalendarPage import
-
+import SalePage from './Page/SalePage/SalePage';
+import SaleItem from './Page/SalePage/saleItem';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Consumer from './Page/SalePage/consumer';
+import CheckoutPage from './Page/SalePage/checkout';
 // Findpw import
+
+
+
+import Dietcalendar2_24_05_21 from './Page/Dietcalendar/Dietcalendar2_24_05_21';
+import Dietcalendar1_24_05_21 from './Page/Dietcalendar/Dietcalendar1_24_05_21';
+import CalendarPage_24_05_21 from './Page/CalendarPage/calendar_24_05_21';
 function App() {
+  
   return (
     <div className='App'>
       <BrowserRouter>
           <Routes>
+            <Route path="/checkout" element={<CheckoutPage />} />
+            <Route path="/consumer" element={<Consumer />} />
+            <Route path="/saleitem" element={<SaleItem />} />
+            <Route path="/sale" element={<SalePage />} />
             <Route path="/userinfo" element={<UserInfo />} />
             <Route path="/findpw" element={<Findpw />} /> {/* Add this line */}
             <Route path="/calendar" element={<CalendarPage />} />
@@ -35,6 +51,15 @@ function App() {
             <Route path="/recipePage" element={<RecipePage />} />
             <Route path="/recipeblog" element={<RecipeBlog />} /> {/* Add this line */}
             <Route path="/findid" element={<FimdId />} />
+
+
+
+
+
+
+            <Route path="/dietcalendar1_24_05_21" element={<Dietcalendar1_24_05_21 />} />
+            <Route path="/dietcalendar2_24_05_21" element={<Dietcalendar2_24_05_21 />} />
+            <Route path="/calendar_24_05_21" element={<CalendarPage_24_05_21 />} />
           </Routes>
       </BrowserRouter>
     </div>

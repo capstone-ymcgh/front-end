@@ -6,7 +6,7 @@ const TopMenu = () => {
     const navigate = useNavigate();
     const [menu, setMenu] = useState("home");
     const clickhome = () => {
-        navigate('/');
+        navigate('/main');
     }
     const clickdietcalendar = () => {
         navigate('/dietcalendar');
@@ -16,6 +16,9 @@ const TopMenu = () => {
     }
     const clickUserInfo = () => {
         navigate('/userinfo');
+    }
+    const clickSale = () => {
+        navigate('/sale');
     }
     return (
         <div className="topMenu">
@@ -29,6 +32,7 @@ const TopMenu = () => {
                     <li onClick={clickhome}className={menu==="home"?"active":""}>메인</li>
                     <li onClick={clickdietcalendar} className={menu==="Calendar"?"active":""}>식단짜주기</li>
                     <li onClick={clickdierecipebelog} className={menu==="Blog"?"active":""}>레시피게시판</li>
+                    <li onClick={clickSale} className={menu==="Sale"?"active":""}>식자재</li>
                 </ul>
                 <a onClick={clickUserInfo} className="login">내정보</a>
             </div>

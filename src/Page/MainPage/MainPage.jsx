@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import TopMenu from '../topmenu/topmenu';
 import Slide from './Slide';
 import './MainPage.css';
+import SaleuSlide from './SaleSlide';
 import MennuSlide from './menuSlide';
 function MainPage() {
 
@@ -9,22 +10,13 @@ function MainPage() {
         <div>
             <TopMenu />
             <Slide/>
-            <div>
-                <div>추천레시피</div>
-                <div>추천하는 레시피로 최고의 순간을 만들어보세요</div>
-                <div className='Recipe-recommendation'>
-                    <div className='r1'>
-                        <img className="r1-img"src="header_img.png" alt="img1" />
-                        <div className='r1-text'>제목</div>
-                    </div>
-                    <div className='r2'>
-                        <img className="r1-img"src="header_img.png" alt="img1" />
-                        <div className='r1-text'>제목</div>
-                    </div>
-                </div>
+            <div className='main-box'>
+                <div className='main-box-text'>인기 식자재</div>
+            <SaleuSlide/>
             </div>
-            <div>
-                <div>인기 레시피</div>
+            <div className='main-box'>
+                <div className='main-box-r1text'>인기 레시피</div>
+                <div className='main-box-r2text'>푸드팔레트에서 많은 분들이 찾아본 인기 레시피를 소개합니다.</div>
             <MennuSlide/>
             </div>
         </div>

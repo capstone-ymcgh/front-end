@@ -46,6 +46,26 @@
     width: 62px;
     height: 60px;
     background-color: blue;
-
     flex-direction: column;
+}
+.main-box{
+    width:1500px;
+    height: auto;
+
+}
+.main-box-text{
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+.main-box-r1text{
+    text-align: center;
+    width: 300px;
+    font-size: 45px;
+    margin: 100px auto 50px auto;
+    border-bottom: 3px solid #ffcc6d;
+}
+.main-box-r2text{
+    font-size: 25px;
+    margin-bottom: 50px;
 }

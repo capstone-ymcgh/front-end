@@ -29,7 +29,16 @@ const MenuSlide = () => {
       initialSlide={0}
       loop={true}
     >
-      <SwiperSlide className='menu-slide'>Slide 1</SwiperSlide>
+      <SwiperSlide className='menu-slide'>
+        <div className='menu-slide-img'>
+          <img src='header_img.png' alt='slide-img' />
+        </div>
+        <div className='menu-slide-text1'>Slide 1</div>
+        <div className='menu-slide-text2'>Slide 1</div>
+        <div className='menu-slide-text'>
+          
+        </div>
+      </SwiperSlide>
       <SwiperSlide className='menu-slide'>Slide 2</SwiperSlide>
       <SwiperSlide className='menu-slide'>Slide 3</SwiperSlide>
       <SwiperSlide className='menu-slide'>Slide 4</SwiperSlide>
